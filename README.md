@@ -14,4 +14,4 @@ Teremos contato com fornecedores de peças, para caso o cliente não queira traz
 peças que serão instaladas no carro por conta própria. Outro fornecedor que teremos é o 
 de ferramentas e equipamentos, além disso todas as ferramentas, elevadores e 
 equipamentos serão catalogados e terão um código.
- ![](https://www.rede47.com.br/wp-content/uploads/2019/06/foto-interna-rua-da-paz-panoramica-b-1-1024x464.jpg)
+ ![](imagemAutomotivo_700.png)
