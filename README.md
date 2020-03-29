@@ -14,7 +14,7 @@ Teremos contato com fornecedores de peças, para caso o cliente não queira traz
 peças que serão instaladas no carro por conta própria. Outro fornecedor que teremos é o 
 de ferramentas e equipamentos, além disso todas as ferramentas, elevadores e 
 equipamentos serão catalogados e terão um código.
- <div align="center>
- ![](imagemAutomotivo_700.png)
- </div>
  
+<p align="center">
+  <img src="imagemAutomotivo_700.png">
+</p>
