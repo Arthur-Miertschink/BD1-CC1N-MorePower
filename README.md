@@ -1,3 +1,8 @@
+ **Componentes :**
+- Leonardo Gottardi,
+- José Carlos,
+- Arthur Miertschink,
+- Felipe da Silva.
 ## Centro Automotivo MorePower
 O Centro Automotivo MorePower trabalhará com revisões básicas (troca de fluídos, rotação
 de pneus, checagem de lâmpadas) além de um diagnóstico geral da situação das peças, 
