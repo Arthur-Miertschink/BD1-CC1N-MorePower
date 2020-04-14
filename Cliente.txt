@@ -1,0 +1,29 @@
+Cliente
+Quais serviços um determinado ciente já contratou para seus veículos?
+Quais carros de um certo cliente já estiveram na oficina?
+Qual é o tipo de cliente mais atendido por nossa oficina?
+Qual é a frequência de cada cliente na oficina?
+Qual o motivo da volta dos clientes?
+
+Veículos
+Em quais carros foram feitos um determinado serviço?
+Quantos serviços foram feitos em cada carro que ja passou pela oficina?
+Existia algum defeito pré-existente no carro?
+
+Serviços
+Quais mecânicos já trabalharam neste carro?	
+Quais serviços um certo mecânico já realizou?
+Qual é a média de avaliação mensal dos serviços prestados pela empresa?
+Qual serviço é mais recorrente na oficina?
+
+Fornecedor
+Qual fornecedor pratica o melhor preço?
+ 
+Insumos
+Qual a saída de cada peça nos últimos X dias? 
+Quais peças estão em falta?
+Qual é o insumo mais consumido?
+
+Equipamento
+Qual ferramenta tem maior demanda?* (A confirmar)
+
