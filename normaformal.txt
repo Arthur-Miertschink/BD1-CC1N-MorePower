@@ -1,0 +1,7 @@
+
+Primeira Forma Normal (1NF)
+Define que cada atributo deve possuir valor único para cada instância da entidade, se um atributo não tiver valor único deverá ser criada uma nova entidade com um relacionamento com a original de 1:N.
+Segunda Forma Normal (2NF)
+Define que todo atributo que não seja UID deve ser dependente do UID, caso o UID seja composto o atributo deve ser dependente de todas as partes do UID e se o atributo não for dependente de todas as partes do UID composto deverá ser criado uma nova entidade  com o UID parcial.
+Terceira Forma Normal (3NF)
+Define que um atributo não UID não pode ser dependente de outro atributo não UID e caso isso ocorra deverá ser criado uma nova entidade para os atributos dependentes do atributo não UID.
