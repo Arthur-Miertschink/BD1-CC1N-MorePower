@@ -15,6 +15,7 @@ Quais mecânicos já trabalharam neste carro?
 Quais serviços um certo mecânico já realizou?
 Qual é a média de avaliação mensal dos serviços prestados pela empresa?
 Qual serviço é mais recorrente na oficina?
+Qual a média de avaliação sobre um determinado serviço?
 
 Fornecedor
 Qual fornecedor pratica o melhor preço?
