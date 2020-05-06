@@ -28,3 +28,8 @@ Qual é o insumo mais consumido?
 Equipamento
 Qual ferramenta tem maior demanda?* (A confirmar)
 
+Compras
+Qual funcionário fez a compra dos produtos?
+Quais produtos tem maior demanda?
+Qual fornecedor vende mais barato dado produto?
+
