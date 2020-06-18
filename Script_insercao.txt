@@ -1,0 +1,76 @@
+INSERIR NA TABELA CLIENTES
+
+insert into Clientes ( id, telefone, email)
+    values (1001, '(27)99795-6608', 'arthursm50@gmail.com');
+
+INSERIR NA TABELA CLIENTES_PF
+
+insert into Clientes_PF ( id, cpf, nome, sobrenome)
+    values (1002, '154.052.825-52', 'Biroliro', 'Passai');
+
+INSERIR NA TABELA CLIENTES_PJ
+
+insert into Clientes_PJ ( id, cnpj, razao_social)
+    values (1004, '77.505.688/0001-66', 'Quemando Pneus LTDA');
+
+
+INSERIR NA TABELA FUNCIONARIOS
+
+insert into Funcionarios ( id, matricula, nome, sobrenome, cpf, funcao)
+    values (2001, 001, 'Paulo', 'Moura' , '045.982.048-08', 'Mecanico');
+
+
+INSERIR NA TABELA FORNECEDORES
+
+insert into Fornecedores ( id, cnpj, razao_social, nome_fantasia)
+    values (3003, '48.055.111/0001-11', 'Car Parts ME.' ,'Car parts Shop');
+
+INSERIR NA TABELA VEICULOS
+
+insert into Veiculos ( id, placa, marca, modelo, km, versao, Clientes_id)
+    values (4001, 'AAA-0001', 'Fiat' ,'Uno', 34500, 'Sporting', 1001);
+
+INSERIR NA TABELA VISTORIAS
+
+insert into Vistorias (id, ordem_servico, data, descricao, Funcionarios_id, Veiculos_id)
+    values (5002, 002, TO_DATE('2018/05/11 15:31:47', 'yyyy/mm/dd hh24:mi:ss'), 'Lâmpada TE queimada', 2003, 4002);
+
+INSERIR NA TABELA SERVICOS
+
+insert into Servicos (id, data, status, tipo, duracao, valor, desconto, avaliacao, Vistorias_id)
+    values (6001, TO_DATE('2018/01/10 15:20:44', 'yyyy/mm/dd hh24:mi:ss'), 'Concluído','Troca de óleo e filtro','3 horas', 350.00, 0, 5, 5001);
+
+INSERIR NA TABELA COMPRAS
+
+insert into Compras (id, data, valor, Funcionarios_id, Fornecedores_id)
+    values(7003, TO_DATE('2018/06/17 13:12:11', 'yyyy/mm/dd hh24:mi:ss'), 65, 2002, 3003);
+
+INSERIR NA TABELA PRODUTOS
+
+insert into Produtos (id, item, marca, categoria)
+    values(8003, 'Líquido Arrefecimento', 'Motul', 'Liquidos');
+
+INSERIR NA TABELA COMPRAS_PRODUTOS
+
+insert into Compras_Produtos (Compras_id, quantidade, Produtos_id)
+    values(7003, 1, 8003);
+
+INSERIR NA TABELAS ITENS
+
+insert into Itens (quantidade, Produtos_id, Servicos_id)
+    values(1, 8003, 6003);
+
+INSERIR NA TABELA TAREFAS
+
+insert into Tarefas (Funcionarios_id, Servicos_id)
+    values(2001, 6003);
+
+
+AVISO: OS VALORES REFERENTES SÃO SOMENTE PARA QUESTÕES DE EXEMPLO, FAÇA AS ALTERAÇÕES DE ACORDO COM O SEU BANCO.
+
+
+
+
+
+
+
