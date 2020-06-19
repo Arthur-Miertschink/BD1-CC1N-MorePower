@@ -47,8 +47,8 @@ insert into Compras (id, data, valor, Funcionarios_id, Fornecedores_id)
 
 INSERIR NA TABELA PRODUTOS
 
-insert into Produtos (id, item, marca, categoria)
-    values(8003, 'Líquido Arrefecimento', 'Motul', 'Liquidos');
+insert into Produtos (id, item, marca, valor, categoria)
+    values(8003, 'Líquido Arrefecimento', 'Motul', 180, 'Liquidos');
 
 INSERIR NA TABELA COMPRAS_PRODUTOS
 
