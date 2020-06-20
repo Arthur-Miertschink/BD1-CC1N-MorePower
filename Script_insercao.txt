@@ -64,6 +64,25 @@ INSERIR NA TABELA TAREFAS
 
 insert into Tarefas (Funcionarios_id, Servicos_id)
     values(2001, 6003);
+	
+	
+ ALTERAR DADOS INSERIDOS EM COLUNAS
+ 
+UPDATE 
+	[Nome da tabela]
+SET 
+	[Nome da coluna] = [Valor que deseja]
+WHERE 
+	[Nome da tabela.id] = [ID];
+	
+Exemplo: Mudando status do servico
+
+UPDATE
+	Servicos
+SET 
+	status = 'Concluído'
+WHERE 
+	Servicos.id = 6005;
 
 
 AVISO: OS VALORES REFERENTES SÃO SOMENTE PARA QUESTÕES DE EXEMPLO, FAÇA AS ALTERAÇÕES DE ACORDO COM O SEU BANCO.
