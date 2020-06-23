@@ -37,11 +37,11 @@ insert into funcionarios values(15,233,'Tronte','End','111.222.333-32','Administ
 VISTORIAS
 
 insert into vistorias values(1, 123312,TO_DATE('15/07/2017 20:00:00', 'DD/MM/YYYY HH24:MI:SS'),'Sem defeitos',51,13);
-insert into vistorias values(2, 31233,TO_DATE('16/07/2017 20:30:00', 'DD/MM/YYYY HH24:MI:SS'),'Sem defeitos',50,13)
-insert into vistorias values(3, 23123,TO_DATE('17/07/2017 21:43:00', 'DD/MM/YYYY HH24:MI:SS'),'risco na porta lateral traseira',53,13)
-insert into vistorias values(4, 24114,TO_DATE('18/07/2017 20:43:00', 'DD/MM/YYYY HH24:MI:SS'),'Sem defeitos',52,13)
-insert into vistorias values(5, 231312,TO_DATE('19/07/2017 19:43:00', 'DD/MM/YYYY HH24:MI:SS'),'Sem defeitos',54,13)
-insert into vistorias values(6, 12442,TO_DATE('20/07/2017 15:43:00', 'DD/MM/YYYY HH24:MI:SS'),'janela esquerda trincada',55,13)
+insert into vistorias values(2, 31233,TO_DATE('16/07/2017 20:30:00', 'DD/MM/YYYY HH24:MI:SS'),'Sem defeitos',50,13);
+insert into vistorias values(3, 23123,TO_DATE('17/07/2017 21:43:00', 'DD/MM/YYYY HH24:MI:SS'),'risco na porta lateral traseira',53,13);
+insert into vistorias values(4, 24114,TO_DATE('18/07/2017 20:43:00', 'DD/MM/YYYY HH24:MI:SS'),'Sem defeitos',52,13);
+insert into vistorias values(5, 231312,TO_DATE('19/07/2017 19:43:00', 'DD/MM/YYYY HH24:MI:SS'),'Sem defeitos',54,13);
+insert into vistorias values(6, 12442,TO_DATE('20/07/2017 15:43:00', 'DD/MM/YYYY HH24:MI:SS'),'janela esquerda trincada',55,13);
 
 FORNECEDORES
 
