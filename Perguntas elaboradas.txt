@@ -11,6 +11,9 @@ Em quais carros foram feitos um determinado serviço?
 Quantos serviços foram feitos em cada carro que ja passou pela oficina?
 Existia algum defeito pré-existente no carro?
 
+Funcionários
+Qual funcionário fez a compra de um produto que foi utilizado em um serviço para um cliente?
+
 Serviços
 Quais mecânicos já trabalharam neste carro?	
 Quais serviços um certo mecânico já realizou?
@@ -18,6 +21,7 @@ Qual é a média de avaliação mensal dos serviços prestados pela empresa?
 Qual serviço é mais recorrente na oficina?
 Qual a média de avaliação sobre um determinado serviço?
 Qual serviço não teve uma avaliação boa e quem foi o cliente que avaliou?
+Qual serviço não teve uma avaliação boa e qual o funcionário que fez o serviço?
 
 Fornecedor
 Qual fornecedor pratica o melhor preço?
