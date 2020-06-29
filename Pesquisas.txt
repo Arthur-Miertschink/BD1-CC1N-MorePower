@@ -1,0 +1,100 @@
+﻿Anotacoes de exemplos de busca
+
+DE QUEM É CADA CARRO?
+
+PF
+	select
+		Clientes_PF.nome, Veiculos.marca, Veiculos.modelo
+	from
+		Clientes_PF, Clientes, Veiculos
+	where
+		Clientes.id = Veiculos.Clientes_id
+		and Clientes_PF.id = Clientes.id;
+		
+PJ
+
+select
+    Clientes_PJ.razao_social, Veiculos.marca, Veiculos.modelo
+from
+    Clientes_PJ, Clientes, Veiculos
+where
+    Clientes.id = Veiculos.Clientes_id
+    and Clientes_PJ.id = Clientes.id;
+	
+	
+QUAIS FUNCIONARIOS FIZERAM A COMPRA DOS PRODUTOS?
+
+	select 
+		Funcionarios.nome, Funcionarios.matricula, Produtos.item
+	from
+		Funcionarios, Compras, Compras_Produtos, Produtos
+	where
+		Funcionarios.id = Compras.Funcionarios_id
+		and Compras.id = Compras_Produtos.Compras_id
+		and Produtos.id = Compras_Produtos.Produtos_id;
+		
+
+QUAIS SERVIÇOS UM MECANICO JÁ REALIZOU?
+
+select
+    Servicos.id, Funcionarios.nome
+from
+    Servicos, Tarefas, Funcionarios
+where
+    Tarefas.Funcionarios_id = Funcionarios.id
+    and Tarefas.Servicos_id = Servicos.id;
+	
+EM QUAIS CARROS FORAM FEITOS UM DETERMINADO SERVICO?
+
+select 
+    Veiculos.marca, Veiculos.modelo, Veiculos.versao
+from
+    Servicos, Vistorias, Veiculos
+where
+    Servicos.Vistorias_id = Vistorias.id
+    and Veiculos.id = Vistorias.Veiculos_id
+    and Servicos.tipo = 'Troca volante';
+	
+	
+QUAL CLIENTE TEM O PRODUTO DE QUAL FORNECEDOR?
+
+select
+    Clientes_PF.nome, Fornecedores.razao_social, Produtos.item
+from
+    Clientes, Fornecedores, Compras, Compras_Produtos, Produtos, Itens, Servicos, Vistorias, Veiculos, Clientes_PF
+where
+    Clientes_PF.id = Clientes.id
+    and Clientes.id = Veiculos.Clientes_id
+    and Vistorias.Veiculos_id = Veiculos.id
+    and Servicos.Vistorias_id = Vistorias.id
+    and Itens.Servicos_id = Servicos.id
+    and Produtos.id = Itens.Produtos_id
+    and Compras_Produtos.Produtos_id = Produtos.id
+    and Compras_Produtos.Compras_id = Compras.id
+    and Compras.Fornecedores_id = Fornecedores.id;
+	
+QUAIS CLIENTES PRECISAM SER AVISADOS QUE SEUS CARROS ESTÃO AGUARDANDO A CHEGADA DE PEÇAS? 
+
+Select 
+    Clientes_PF.nome, Servicos.status, Clientes.email, Clientes.telefone
+from
+    Clientes, Veiculos, Vistorias, Servicos, Clientes_PF
+where
+    Clientes.id = Clientes_PF.id
+    and Veiculos.Clientes_id = Clientes.id
+    and Vistorias.Veiculos_id = Veiculos.id
+    and Servicos.Vistorias_id = Vistorias.id
+    and Servicos.status = 'Aguardando chegada de peças';
+	
+QUAIS SÃO OS SERVICOS QUE POSSUEM BAIXAS AVALIAÇÕES E QUEM FORAM OS CLIENTES DESSES SERVICOS?
+
+Select
+    Clientes_PF.nome, Clientes.email, Clientes.telefone, Servicos.avaliacao, Servicos.tipo
+from
+    Clientes, Clientes_PF, Veiculos, Vistorias, Servicos
+where
+    Clientes_PF.id = Clientes.id
+    and Clientes.id = Veiculos.Clientes_id
+    and Vistorias.Veiculos_id = Veiculos.id
+    and Servicos.Vistorias_id = Vistorias.id
+    and Servicos.avaliacao < 3;
